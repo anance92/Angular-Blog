@@ -1,0 +1,10 @@
+<div>
+    <h1>Here is {{title}}</h1>
+</div>
+<div>
+    <button (click)="togglePost()">Toggle Post</button>
+    <label [style.font-size.px] = "size">Font Size: {{size}}</label>
+    <div class="body" [style.display]="show ? 'block' : 'none'">
+        {{body}}
+    </div>
+</div>
